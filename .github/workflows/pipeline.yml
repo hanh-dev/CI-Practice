@@ -1,16 +1,16 @@
 name: CI pipeline
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
+    steps:
     - name: Checkout code
       uses: actions/checkout@v5
     - name: Set up Node.js
       uses: actions/setup-node@v3
-      with: 
+      with:
         node-version: 16
     - name: Install dependancy
       uses: npm Install
